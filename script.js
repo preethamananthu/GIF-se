@@ -17,7 +17,7 @@ document.querySelector(".js-userinput").addEventListener("keydown", function (e)
 function getInput(item) {
 
     var query = item.split(' ').join('+');
-    var url = "https://api.giphy.com/v1/gifs/search?api_key=CDIdDIzVF44fYTV9u48EghhunAUyl2Fs&q=" + query + "&limit=&offset=0&rating=r&lang=en";
+    var url = "https://api.giphy.com/v1/gifs/search?api_key=CDIdDIzVF44fYTV9u48EghhunAUyl2Fs&q=" + query;
     console.log(url);
     // AJAX Request
     var GiphyAJAXCall = new XMLHttpRequest();
