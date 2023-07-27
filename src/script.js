@@ -43,7 +43,7 @@ function PTD(x) {
     var imgUrls = response.data;
     imgUrls.forEach(function (image) {
         var src = image.images.fixed_height.url;
-        body.innerHTML += "<a href=\"" + src + "\" target=\"_blank\"><img src=\"" + src + "\" class=\"con-img\"></a>";
+        body.innerHTML += "<img src=\"" + src + "\" class=\"con-img\">";
     })
 
 }
